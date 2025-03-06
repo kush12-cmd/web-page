@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePage Bootstrap Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font: 1em sans-serif;
+            
+        
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: #0b2e59;
+        }
+        .hero h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72px;
+    
+}
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .feature-box {
+    background: white;
+    padding: 50px 30px; /* 50px Top & Bottom, 30px Left & Right */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.hero .btn-primary {
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero .btn-primary:hover {
+    background: rgb(48, 142, 209);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0b2e59;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+        .nav-link.active {
+            color: lightblue !important;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+        .navbar {
+            padding: 15px 0; /* Reduced padding for smaller height */
+            border-bottom: 2px solid rgb(222, 237, 248); /* Keep a subtle border */
+}
+        .btn-primary {
+            background-color: rgb(69, 153, 213) !important;
+            border-color: rgb(69, 153, 213) !important;
+        }
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            margin: 0;
+            color: rgb(18, 66, 101);
+        }
+        .navbar-nav .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: rgb(18, 66, 101) !important;
+        }
+        .navbar .btn-primary {
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .navbar .btn-primary:hover {
+            background: rgb(48, 142, 209);
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .navbar-nav .nav-item .nav-link.active {
+    color: rgb(85, 186, 236) !important;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">OnePage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary text-white px-3" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container">
+            <h1>One Page Bootstrap <br> Website Template</h1>
+            <p>We are a team of talented designers making websites with Bootstrap</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+    
+   <!-- Features Section -->
+<section class="container py-5">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="feature-box">
+                <i class="bi bi-tv" style="font-size: 2rem; color: rgb(48, 142, 209);"></i>
+                <h5>Lorem Ipsum</h5>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-box">
+                <i class="bi bi-gem" style="font-size: 2rem; color: rgb(48, 142, 209);"></i>
+                <h5>Sed ut perspiciatis</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-box">
+                <i class="bi bi-geo-alt" style="font-size: 2rem; color: rgb(48, 142, 209);"></i>
+                <h5>Magni Dolores</h5>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="feature-box">
+                <i class="bi bi-sliders" style="font-size: 2rem; color: rgb(48, 142, 209);"></i>
+                <h5>Nemo Enim</h5>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
